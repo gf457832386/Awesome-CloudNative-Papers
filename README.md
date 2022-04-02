@@ -292,7 +292,7 @@
 
 随着云数据中心规模的不断扩大，自动化资源配置势在必行，以最好地满足低延迟和高能效的需求。然而，由于系统状态的动态性和用户需求的多样性，云环境下资源的高效分配面临着巨大的挑战。现**有的云资源分配解决方案大多依赖于云系统的先验知识，不能有效地处理动态云环境，这可能会导致能源消耗过多和QoS (Quality-of-Service, QoS)降低**。为了解决这一问题，我们提出了一种基于Actor-Critic深度强化学习(DRL)的自适应高效云资源分配方案。首先，**参与者参数化策略(分配资源)，并根据批评家(评估操作)评估的分数选择操作(调度作业)**。**然后利用梯度上升更新资源分配策略，利用优势函数减小策略梯度的方差，提高了训练效率;**我们使用来自谷歌云数据中心的真实数据进行了广泛的模拟实验。结果表明，与两种基于DRL的高级云资源分配方法和五种经典的云资源分配方法相比，该方法在延迟和任务丢弃率方面具有更高的QoS，并提高了能量效率。
 
-**关键词：**Resource management, Cloud computing, Quality of service, Training, Dynamic scheduling, Reinforcement learning, Energy consumption
+**关键词：** Resource management, Cloud computing, Quality of service, Training, Dynamic scheduling, Reinforcement learning, Energy consumption
 
  
 
@@ -302,7 +302,7 @@
 
 多云正在成为一个流行的云生态系统，因为它允许企业用户在多个云服务提供商之间共享工作负载，以更低的运营成本和更高的应用弹性实现高质量的服务。在多云中，云服务广泛分布在不同的地点，价格也不同。因此，**Web应用程序提供者面临着为应用程序复制和部署选择合适的云服务以最小化部署成本的挑战**。同时，**部署的应用程序副本必须满足请求响应时间的约束**，以保持用户体验的质量。为了满足这两个主要需求，本文研究了一个新的问题，即Web应用程序在多云环境下的复制和部署(WARDMC)，该问题**同时考虑了成本最小化和平均响应时间的约束**，特别是请求处理时间和网络延迟。为了解决这个问题，我们开发了一种名为MCApp的新方法。**MCApp将迭代混合整数线性规划与领域定制的大型邻域搜索相结合，以优化应用程序副本部署和用户请求调度**。使用真实数据集进行的大量实验表明，MCApp显著优于最近提出的几种方法。
 
-**关键词：**Cloud computing, Costs, Time factors, Optimization, Upper bound, Pricing, User experience
+**关键词：** Cloud computing, Costs, Time factors, Optimization, Upper bound, Pricing, User experience
 
  
 
@@ -322,7 +322,7 @@
 
 在本文中，我们将讨论移动边缘计算(MEC)系统中的资源分配和货币化挑战，在MEC系统中，**用户有不同的需求，并为高质量的服务而竞争**。我们将边缘资源分配问题(ERAP)表述为混合整数线性规划(MILP)，并证明了ERAP是NP-hard。为了有效地解决这一问题，我们提出了两种资源配置机制。首先，我们开发了一个**基于拍卖的机制**，并证明所提出的机制是个体理性的，并产生了无嫉妒的分配。我们还提出了一个**基于LP的近似机制**，该机制不能保证无嫉妒，但它提供的解决方案可以保证与最优解决方案保持一定距离。我们通过对各种规模的ERAP实例进行广泛的实验分析来评估所提出机制的性能。我们使用商业求解器求解MILP模型得到的最优解作为基准来评估解决方案的质量。我们的分析表明，所提出的机制可以在合理的时间内为相当大的问题实例获得接近最优的解决方案。
 
-**关键词：**Resource management,Servers,Pricing,Edge computing,Cloud computing,Cost accounting,Computational modeling
+**关键词：** Resource management,Servers,Pricing,Edge computing,Cloud computing,Cost accounting,Computational modeling
 
  
 
@@ -352,7 +352,7 @@
 
 具有低延迟需求的新兴应用，如实时分析、沉浸式媒体应用和智能虚拟助手，使边缘计算成为关键的计算基础设施。现有的研究已经在具有不同目标(如延迟最小化、负载均衡、能源效率和放置成本最小化)的同构场景中探索了云的放置问题。然而，考虑到下一代5G网络和loT应用，将**云应用于高度异构的部署场景仍然是一个开放的挑战**。这些应用程序的新需求表明，在部署cloudlet时，在确保低延迟服务保证方面仍然存在差距。此外，**以经济有效的方式部署cloudlets和确保边缘计算中所有用户的完全覆盖是另一个关键的冲突问题。**在本文中，我们通过**设计一个双因子近似算法来解决异构云布局问题，以保证有限制的延迟和布局成本，同时将用户应用程序完全映射到适当的云**，从而解决这些问题。我们首先将该问题表述为一个多目标整数规划模型，并证明它是一个计算NP-hard问题。然后我们提出了一个双因子逼近算法，ACP，以解决其棘手的问题。我们通过在基于纽约市OpenData的多个部署场景中进行广泛的理论分析和实验，来研究ACP的有效性。我们证明了ACP提供了一个(2,4)近似比的延迟和放置成本。实验结果表明，ACP在一个多项式的运行时间内获得了接近最优的结果，使其适用于异构部署场景下的短期和长期云部署。
 
-**关键词：**Cloud computing, Costs, Approximation algorithms, Edge computing, Servers, Low latency communication, Internet of Things
+**关键词：** Cloud computing, Costs, Approximation algorithms, Edge computing, Servers, Low latency communication, Internet of Things
 
  
 
@@ -432,7 +432,7 @@ Taskflow旨在使用基于任务图的轻量级方法简化并行和异构应用
 
 基于工作服务器通信的参数服务器(PS)设计用于集群中的分布式机器学习训练。在ML模型训练的反馈驱动探索中，用户利用每个作业的早期反馈来决定是终止作业还是继续运行作业，从而找到最优的模型配置。但是，PS不支持在运行时调整作业的工作者和服务器的数量。由于集群资源无法动态分配或释放到作业中，导致早期反馈延迟和资源利用率不足，成为可扩展分布式ML训练的瓶颈。本文重新思考PS体系结构的原理。我们提出了弹性参数服务器(EPS)，一个轻量级和用户透明的PS，加速了对分布式ML训练的反馈驱动探索。EPS允许从运行中的作业中删除工人和服务器的子集，并在运行时将释放的资源分配给传入的作业，以减少早期反馈延迟。它还可以使用一个终止作业释放的资源，将工人和服务器添加到正在运行的作业中，以提高资源利用率和训练速度。我们开发了一个启发式调度程序，利用EPS并为多个ML作业提供**可伸缩的资源调度**。我们在腾讯天使中实现EPS，在Apache Yarn中实现调度器，并使用各种ML模型进行评估。实验结果表明，EPS与PS相比，ML训练速度提高了1.5倍。
 
-**关键词：**Servers, Training, Runtime, Clocks, Yarn, Resource management, Training data
+**关键词：** Servers, Training, Runtime, Clocks, Yarn, Resource management, Training data
 
 
 
@@ -452,7 +452,7 @@ Taskflow旨在使用基于任务图的轻量级方法简化并行和异构应用
 
 边缘计算已经成为一种通过计算卸载为资源和延迟敏感的loT应用程序提供快速和近数据计算服务的有效方法。有效的计算卸载策略需要综合处理以下几个主要问题**:1)动态通信和计算资源的分配;2)异构任务的延迟约束;3)计算成本低廉和分布式算法的要求**。然而，现有的工作主要集中在这些问题的一部分，这不足以在复杂和实际的场景中实现预期的性能。为了解决这一问题，本文系统地研究了一个具有延迟约束的分布式计算卸载问题，即**异构计算任务需要通过有限数量的随机通信信道不断地卸载到一组边缘服务器上**。将任务卸载问题描述为未知先验统计知识下的时滞约束长期随机优化问题。为了解决这个问题，我们首先提供了一个技术路径，将其转换并分解为几个槽级子问题。然后，我们设计了一种分布式在线算法，即TODG，以有效地分配资源和调度卸载任务。此外，我们从**最优差距、最坏情况下的延迟和系统参数的影响等方面对TODG进行了全面的分析**。大量的仿真结果验证了TODG算法的有效性和有效性。
 
-**关键词：**Task analysis,Delays,Servers,Edge computing,Resource management,Mobile handsets,Optimization
+**关键词：** Task analysis,Delays,Servers,Edge computing,Resource management,Mobile handsets,Optimization
 
 
 
@@ -470,7 +470,7 @@ Taskflow旨在使用基于任务图的轻量级方法简化并行和异构应用
 
 尽管出现了越来越多的应用程序，但区块链完全实用的一个主要问题是数据查询的低效率。在区块链上进行直接查询需要花费大量的时间来搜索每个块，而在区块链数据库上进行间接查询会大大降低查询结果的真实性。为了克服真实性问题，我们提出了一种可验证查询层(Verifiable Query Layer, VQL)，它可以部署在云上，为区块链系统提供高效和可验证的数据查询服务。中间件层从底层区块链系统中提取数据，并在数据库中有效地对其进行重组。为了防止在中间件中存储伪造的数据，根据每个构建的数据库计算一个密码指纹。数据库指纹将首先由矿工验证，然后写入区块链。此外，公共用户可以在中间件层验证整个数据库或几个他们感兴趣的数据库。我们将VQL与验证方案一起实现，并在一个实际的区块链系统上进行了大量的实验。评估结果表明，VQL能够有效地支持区块链系统的各种数据查询服务，并保证查询结果的真实性。
 
-**关键词：**Blockchains, Peer-to-peer computing, Middleware, Bitcoin, Data mining, Distributed ledger, Costs
+**关键词：** Blockchains, Peer-to-peer computing, Middleware, Bitcoin, Data mining, Distributed ledger, Costs
 
 
 
@@ -488,7 +488,7 @@ Taskflow旨在使用基于任务图的轻量级方法简化并行和异构应用
 
 Spark和Hadoop等大数据框架被广泛应用于研究和行业中运行分析工作。云计算提供了价格合理、易于管理的计算资源。因此，许多组织正在转向云部署他们的大数据计算集群。然而，在存在各种服务水平协议(Service Level Agreement, SLA)目标(如货币成本降低和工作性能改进)的情况下，**作业调度是一个复杂的问题。现有的大多数研究没有同时处理多个目标，也没有捕捉到固有的集群和工作负载特征**。在本文中，我们阐述了一个云部署的Spark集群的作业调度问题，并提出了一种新的强化学习(RL)模型来适应SLA目标。我们开发了RL集群环境，并在TF-Agents框架中实现了**两个基于深度强化学习(DRL)的调度器**。提出的基于DRL的调度代理在细粒度级别上工作，**在利用云虚拟机实例的定价模型的同时放置作业的执行器**。此外，基于DRL的代理还可以**了解不同类型作业的固有特征，从而找到合适的位置，以降低集群虚拟机的总使用成本和作业的平均持续时间**。结果表明，本文提出的基于drl的算法可将虚拟机的使用成本降低30%。
 
-**关键词：**Sparks, Cloud computing, Costs, Task analysis, Service level agreements, Big Data, Reinforcement learning
+**关键词：** Sparks, Cloud computing, Costs, Task analysis, Service level agreements, Big Data, Reinforcement learning
 
 #### [TPDS 2021]Hierarchical Multi-Agent Optimization for Resource Allocation in Cloud Computing【6】
 
