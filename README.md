@@ -188,7 +188,7 @@
 
 容器编排平台，如Kubernetes和Kubernetes衍生的KubeEdge(统称为基于Kubernetes的系统)，已经逐渐被用来对Cloud、Fog和Edge资源进行统一管理。容器供应算法对于保证这种基于kubernetes的系统的服务质量(QoS)至关重要。然而，现有的算法大多只关注固定数量容器的放置和迁移，而没有考虑容器的**弹性供应**。同时，**在不同平台上广泛使用的基于线性性能模型的反馈控制或基于固定处理速率的排队模型无法准确描述容器化Web系统的性能**。此外，现有方法使用的固定参考点很可能产生不准确的输出误差，在到达率发生较大变化时产生较大波动。在这篇文章中,设计了一种**基于变处理率排队模型和线性模型相结合的弹性供给容器反馈控制方法**，该方法通过自动学习不同到达率的参考模型，并将输出误差从参考模型映射到排队模型，提高了输出误差的准确性。在一个真实的Kubernetes集群上，我们的方法与几种最先进的算法进行了比较。实验结果表明，该方法获得了最低的服务水平协议(SLA)违反率(降低不低于8.44%)和第二低的成本。
 
-**关键词：**Containers,Adaptation models,Computational modeling,Feedback control,Time factors,Quality of service,Cloud computing 
+**关键词：** Containers,Adaptation models,Computational modeling,Feedback control,Time factors,Quality of service,Cloud computing 
 
 #### [TC 2022]PRESTO: A Penalty-Aware Real-Time Scheduler for Task Graphs on Heterogeneous Platforms【8】
 
@@ -196,7 +196,7 @@
 
 调度异构分布式平台上建模为有向无环图的实时应用程序是一个具有挑战性和计算要求的问题。本文讨论了**在由一组完全连接的异构处理器组成的分布式平台上执行实时任务图的高效调度器的设计**。调度策略的目标是最小化通用罚函数，该罚函数可友好地应用于各种应用领域，如实时嵌入式系统、云/雾计算、工业自动化和loTs、智能电网、汽车和航空电子系统等。我们首先将问题编码为约束满足问题，然后开发了一种高效的基于列表的启发式调度算法，称为**异构平台上任务图的惩罚感知实时调度算法**(PRESTO)，以生成最小惩罚截止时间的静态调度。PRESTO的通用效能通过使用标准基准任务图的大量基于仿真的实验得到了验证。PRESTO在不同场景下的实际适用性得到了进一步的展示，在两个不同的实际案例研究中，前者涉及汽车嵌入式系统，而后者则涉及雾计算领域。
 
-**关键词：**Task analysis, Real-time systems, Processor scheduling, Program processors, Schedules, Optimal scheduling, Job shop scheduling
+**关键词：** Task analysis, Real-time systems, Processor scheduling, Program processors, Schedules, Optimal scheduling, Job shop scheduling
 
 
 
@@ -206,7 +206,7 @@
 
 新兴的网络功能虚拟化(NFV)模式有望通过在商用服务器上灵活部署虚拟化网络功能(VNFs)来缩短网络功能的更新周期并降低资本支出。但是，每种类型所需的资源(CPU、内存等。)来保证处理数据包时的性能。**这带来了不同的部署成本，尤其是在由来自不同供应商的大量网络功能平台组成的异构云中。**为了优化VNFs的运行，网络运营商有必要在昂贵的云基础架构中动态部署VNFs。在本文中，我们发起了**异构云中多资源约束下最小化部署成本**的研究。我们将多资源VNF部署问题(MVDP)公式化为一个最优化问题，并证明了它的困难性。我们提出了一种离线(1，d+1)-双标准近似算法和一种(O(1)，O(n logn))-竞争在线算法，以可扩展的方式部署VNFs，其中d是资源类型的数量，n是所需VNFs的数量。大规模仿真和基于DPDK的OpenNetVM实现表明，我们的算法可以减少34%的总开销，并提高多资源分配的性能。
 
-**关键词：**Network Function Virtualization, Heterogeneous Cloud, approximation algorithm
+**关键词：** Network Function Virtualization, Heterogeneous Cloud, approximation algorithm
 
 
 
@@ -216,7 +216,7 @@
 
 数据中心使用gpu提供新兴的面向用户的服务所需的显著计算吞吐量。面向用户的服务的每日用户访问模式为实现更好的GPU利用率提供了强大的激励，之前的工作集中在实现多核处理器和传统非抢占GPU上的共同位置。然而，**当前的gpu正在向空间多任务发展，并引入了一组新的挑战来消除QoS违规。**为了解决这个开放的问题，我们探究了空间多任务gpu上QoS冲突的潜在原因。针对这些原因，我们提出了C-Laius，这是一个运行时系统，它**仔细地将计算资源分配给位于同一位置的应用程序，以最大限度地提高批处理应用程序的吞吐量，同时保证面向用户的服务所需的QoS**。C-Laius不仅支持一个面向用户的应用与多个批处理应用共存，还支持多个面向用户的应用与多个批处理应用共存。在单个共定位面向用户的应用程序的情况下，我们对Nvidia RTX 2080Ti GPU的评估表明，C-Laius将空间多任务GPU的利用率提高了20.8%，同时实现了面向用户的服务的99%的延迟目标。对于多个面向用户的应用程序共存的情况，C-Laius保证了不违反QoS，同时平均提高了35.9%的加速器利用率。
 
-关键词：Quality of service, Kernel, Multitasking, Task analysis, Graphics processing units ,Resource management, Bandwidth
+**关键词：** Quality of service, Kernel, Multitasking, Task analysis, Graphics processing units ,Resource management, Bandwidth
 
 
 
@@ -226,7 +226,7 @@
 
 由于深度学习的广泛成功，许多以cpu为中心的人工智能计算系统都采用gpu、fpga、asic等专用设备来处理计算密集型的深度学习任务，这些设备可以被称为DLPUs (deep learning Processing unit)。**由于映射到cpu上的标量控制操作和映射到DLPUs上的向量计算操作的分离，导致cpu和DLPUs之间的交互频繁且代价高昂，从而导致交互墙**。此外，算法复杂度的增加和DLPU计算速度的提高，将进一步大大加剧交互墙。为了打破交互壁垒，我们提出了一种新的以DLPU为中心的深度学习计算系统，该系统由面向异常的编程(EOP)模型和cpuess DLPU的体系结构支持组成。EOP模型将深度学习任务中的标量控制操作作为异常处理程序处理，最大限度地避免了关键的矢量计算操作的停滞。与集成了标量控制操作的标量处理单元(SPU)和矢量计算操作的并行处理单元(PPU)的cpuess  DLPU一起，形成了一个融合的管道，**该以dlpu为中心的系统可以经济有效地利用EOP模型，在不干扰对方的情况下同时执行两种操作**。实验结果表明，与目前最先进的基于PCle总线的V100离散GPU的商用cpu为中心的系统相比，以dlpu为中心的系统性能提高10.30倍，节能92.99%。此外，与以cpu为中心的DLPU系统(SPU作为主机，并集成了PPU)相比，本文提出的以DLPU为中心的系统在避免交互的情况下仍然获得了15.60%的性能提升。
 
-**关键词：**Neural net accelerators, system architectures, interaction wall
+**关键词：** Neural net accelerators, system architectures, interaction wall
 
 
 
