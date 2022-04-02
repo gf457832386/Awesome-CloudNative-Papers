@@ -244,7 +244,7 @@
 
 由于现代工作负载应用程序的高度不稳定性，以及用户对低能耗和响应时间的敏感需求，大规模雾平台中的智能任务配置和任务管理具有挑战性。容器编排平台的出现缓解了这一问题，现有技术要么使用启发式来快速达成调度决策，要么使用增强学习和进化方法等Al驱动方法来适应动态场景。前者常常不能快速适应高度动态的环境，而后者的运行时足够慢，会对响应时间产生负面影响。因此，**需要一种既能在不稳定的环境中有效工作又能降低调度开销的调度策略**。为了实现这一目标，我们提出了一种基于梯度的优化策略，使用梯度相对于输入的反向传播(GOBI)。此外，我们通过开发耦合仿真和容器编排框架(COSCO)，利用预测数字孪生模型的准确性和仿真能力。基于此，我们创建了一种**混合仿真驱动决策**方法GOBI，以优化服务质量(QoS)参数。**联合仿真和反向传播方法允许这些方法在不稳定的环境中快速适应**。在雾应用中使用GOBI和GOBI方法进行的真实数据实验表明，与最先进的算法相比，在能源消耗、响应时间、服务水平目标和调度时间方面分别有15%、40%、4%和82%的显著提高。
 
-**关键词：**Fog Computing, Coupled Simulation, Container Orchestration, Back-propagation to input, QoS Optimization
+**关键词：** Fog Computing, Coupled Simulation, Container Orchestration, Back-propagation to input, QoS Optimization
 
 
 
@@ -262,7 +262,7 @@
 
 在许多数据密集型应用程序中，工作流通常被用作组织数据处理任务的重要模型，而资源配置是提高工作流性能的一个重要且具有挑战性的问题。最近，云和大规模集群中的系统变化，如**I/O和网络性能和故障事件**，已经被观察到，极大地影响工作流的性能。**传统的资源配置方法忽略了这些变化，可能导致资源配置结果不理想。**在本文中，我们为考虑系统变化的**工作流性能优化**提供了一个通用的解决方案。具体地说，我们将系统动力学建模为随时间变化的随机变量，并将其概率分布作为优化输入。尽管该解决方案很有效，但它涉及大量的计算开销。因此，我们**提出了三种剪枝技术来简化工作流结构，减少概率计算开销**。我们在运行时库中实现了我们的技术，这允许用户将有效的概率优化整合到现有的资源配置方法中。实验表明，与最先进的静态解相比，概率解可以提高65%的性能，我们的剪枝技术可以大大减少我们的概率方法的开销。
 
-**关键词：**Optimization, Task analysis, Probabilistic logic, Dynamic scheduling, Data processing,Cloud computing, Probability distribution
+**关键词：** Optimization, Task analysis, Probabilistic logic, Dynamic scheduling, Data processing,Cloud computing, Probability distribution
 
  
 
@@ -282,7 +282,7 @@
 
 跨地理分布的数据中心生成、存储和处理大量数据已成为最近的趋势。在使用MapReduce、Spark等流行的数据并行框架处理地理分布数据时，由于数据中心间链路的带宽远低于数据中心内链路，因此在通信阶段优化网络传输对应用性能的影响越来越重要。在本文中，我们将重点关注**如何为数据分析作业的跨数据中心流开发多路径路由的灵活性**，希望能够更好地利用跨数据中心链接，从而提高作业性能。我们设计了一个**最优的多路径路由和调度策略，以实现所有并行作业的最佳网络性能**，基于我们的优化问题可以转化为一个等价的线性规划(LP)问题来有效地解决。作为本文的重点，我们在一个应用层软件定义的跨数据中心叠加试验台的控制器上实现了本文提出的算法，该试验台旨在为Spark作业提供传输优化服务。通过对我们在谷歌Cloud上的实际实现的广泛评估，我们已经展示了令人信服的证据，表明我们的最优多路径路由和调度策略在工作性能方面取得了显著的改进。
 
-**关键词：**Data analysis, Routing, Bandwidth, Task analysis, Sparks, Optimization, Internet
+**关键词：** Data analysis, Routing, Bandwidth, Task analysis, Sparks, Optimization, Internet
 
  
 
@@ -312,7 +312,7 @@
 
 云计算范式提供了许多诱人的优势，使用户能够方便地存储和共享数据。然而，用户自然不愿意将他们的数据直接外包给云计算，因为这些数据通常包含敏感信息。虽然已经提出了几种云数据共享的细粒度访问控制方案，但**大多数方案都关注于加密数据的访问控制**(例如，限制接收者的解密能力)。与现有的工作不同，本文旨在通过开发一个**更实用的双向细粒度访问控制方案**来解决这个具有挑战性的问题，该方案可以限制发送方和接收方的能力。为此，我们系统地研究了云数据共享的访问控制。受访问控制加密(ACE)的启发，我们提出了一种**将云端和边缘端结合起来的新型数据共享框架**。边缘服务器位于所有通信的中间，根据预定义的访问策略检查和防止非法通信。接下来，我们开发了一种有效的访问控制算法，利用基于属性的加密和代理再加密的框架。实验结果表明，与之前的工作相比，我们的方案在加解密方面具有更好的性能。      
 
-**关键词：**Cloud computing, Access control, Receivers, Encryption, Servers, Cryptography, Search problems
+**关键词：** Cloud computing, Access control, Receivers, Encryption, Servers, Cryptography, Search problems
 
  
 
@@ -332,7 +332,7 @@
 
 在多访问边缘计算(MEC)环境中，应用程序供应商的数据可以缓存在边缘服务器上，以确保低延迟的数据检索。通过对传输功率的灵活分配，海量用户可以同时访问高速率的边缘服务器。管理网络资源的能力为应用程序供应商提供了独特的机会，但也带来了前所未有的挑战。为了**保证MEC环境下用户的快速数据检索，边缘数据缓存必须同时考虑数据、用户和传输功率的分配**。我们首次尝试研究**数据、用户和功率分配(DUPA 3)问题**，旨在**服务于大多数用户，最大化他们的总体数据速率**。首先，我们制定DUPA问题并证明其NP完备性。然后，我们将DUPA 3问题建模为一个潜在的承认至少一个纳什均衡的**DUPA 3博弈**，并提出一个**两阶段博弈论**的去中心化算法DUPA 3博弈来实现纳什均衡，作为DUPA 3问题的解决方案。为了评估DUPA 3博弈，我们分析了它的理论性能，并进行了广泛的实验来证明它的有效性和效率。
 
-**关键词：**Servers, Resource management, Games, Interference, NOMA, Intercell interference, Distributed databases
+**关键词：** Servers, Resource management, Games, Interference, NOMA, Intercell interference, Distributed databases
 
  
 
@@ -342,7 +342,7 @@
 
 云计算作为一种高效的商业信息技术，已经吸引了越来越多的用户和企业使用。面对如此众多且种类繁多的客户，预算有限的云服务提供商(CPs)需要提供满意的定制定价服务，盈利的客户和系统投资，灵活的系统资源配置策略，以提高客户体验和长期利润。**现有的利润优化研究很少考虑客户的多样性和动态性**，**由于客户关系管理不善，可能会对长期利润增长产生负面影响**。在本文中，我们通过**考虑客户多样性和动态特性来实现客户关系管理，并提出了一种客户自适应资源配置方案，以在有限预算下实现长期利润最大化**。我们考虑了**四种客户类型(即忠诚的、旧的、新的和失去的)**，它们可以在客户与CP交互的生命周期中相互转换。CP构建多个云服务子平台，每个子平台包含多个多服务器系统，服务于同一类型的客户。对于云服务平台，我们首先使用分析方法对单个多服务器系统进行分析，以获得其最优利润、投入资金和系统配置。特别是，对于服务新客户和失去客户的系统，我们开发了一种**基于客户终身价值(CLV)的客户投资方案**，该方案在有限的营销预算下选择有价值的客户进行投资。基于上述分析，我们提出了一种由客户保留率(CRR)驱动的三阶段启发式方案，该方案在有限的基础设施预算下，优先投资于面临危险的客户的多服务器系统，以减少客户流失，促进长期利润增长。我们进行了大量的仿真实验来验证我们方法的有效性。仿真结果表明，与基准算法相比，该方法可将长期利润和CRR分别提高3.4倍和7.8倍。
 
-**关键词：**Pricing, Cloud computing, Biological system modeling, Quality of service, Investment,Optimization, Costs
+**关键词：** Pricing, Cloud computing, Biological system modeling, Quality of service, Investment,Optimization, Costs
 
  
 
@@ -362,7 +362,7 @@
 
 面向用户的服务现在正朝着微服务体系结构发展，在这种体系结构中，服务是通过连接多个微服务阶段来构建的。由于整个服务是繁重的，所以微服务架构显示了只将一些微服务阶段卸载给接近终端用户的边缘设备的机会。然而，新兴技术往往导致云边缘连续体中基于微服务的服务质量(QoS)的违背，因为它们**没有考虑通信开销或微服务与外部协同任务之间的资源争用**。我们提出了Nautilus，这是一个运行时系统，可以在云边缘连续体中有效地部署基于微服务的面向用户的服务。**Nautilus确保基于微服务的面向用户的服务的QoS，同时最小化所需的计算资源**，它由一个通信感知的微服务映射器、一个争用感知的资源管理器和一个io敏感和负载感知的微服务迁移调度程序组成。映射器根据通信开销将微服务图划分为多个分区，并将这些分区映射到适当的节点。在每个节点上，资源管理器基于可能捕获复杂争用行为的强化学习确定其微服务的最佳资源分配。一旦微服务受到外部IO压力的影响，IO敏感的微服务调度器将关键节点迁移到空闲节点。此外，当微服务的负载动态变化时，负载敏感的微服务调度器将微服务从繁忙节点迁移到空闲节点，以确保整个服务的QoS目标。实验结果表明，在当前存在QoS违规的情况下，Nautilus能够在外部共享资源竞争下保证所要求的QoS目标。同时，Nautilus减少了23.9%的计算资源占用和53.4%的网络带宽占用，同时实现了所需的99%-ile延迟。
 
-**关键词：**Quality of service, Cloud computing, Task analysis, Resource management, Computer architecture Runtime, Bandwidth
+**关键词：** Quality of service, Cloud computing, Task analysis, Resource management, Computer architecture Runtime, Bandwidth
 
  
 
@@ -372,7 +372,7 @@
 
 物联网(loT)的发展正在推动流量和处理需求的惊人增长，说服5G参与者改变他们的基础设施。在这种情况下，雾计算作为一种潜在的解决方案出现了，它为运行loT应用程序提供了附近的资源。然而，Fog带来了一些阻碍其应用的挑战。在本文中，我们考虑了重新配置问题，即**如何根据应用程序需求和资源使用的发展动态地调整在Fog上运行的loT应用程序的位置**。我们提出并评估了一系列基于在线调度和在线学习方法的重构算法。通过在现实测试平台上的大量实验，我们证明了**性能强烈依赖于Fog基础设施和loT应用程序信息的质量和可用性**。这些信息主要涉及应用程序的资源使用情况(由用户在应用程序设计期间估计)和基础设施中的资源可用性(由商业的现成监控工具收集)。最后，我们展示了一种**反应性和贪心策略，它依赖于这些额外的信息，可以克服最先进的在线学习算法的性能，即使在一个场景中不准确的信息。**
 
-**关键词：**Internet of Things, Sensors, Cloud computing, Quality of service, Performance evaluation, Automobiles, Sensor phenomena and characterization
+**关键词：** Internet of Things, Sensors, Cloud computing, Quality of service, Performance evaluation, Automobiles, Sensor phenomena and characterization
 
  
 
@@ -382,7 +382,7 @@
 
 深度神经网络(DNNs)已成为智能物联网(loT)系统必不可少的重要支撑技术。由于大规模dnn的计算成本较高，直接将其部署在能量受限的loT设备中可能是不可行的。计算卸载技术通过将计算密集型任务卸载到云或边缘，为dnn的执行提供了一种可行的解决方案。然而，在云边缘环境中，**基于DNN且有截止日期限制的智能loT系统的节能卸载仍然是一个开放的挑战**。为了应对这一挑战，我们首先设计了一个**新的系统能耗模型**，该模型考虑了所有参与服务器(来自云和边缘)和loT设备的运行时、切换和计算能耗。其次，提出了一种基于自适应粒子群优化算法和遗传算法算子的节能卸载策略。该策略通过分层划分操作有效地对DNN层进行卸载决策，降低了SPSO-GA的编码维数，提高了执行时间。仿真结果表明，与其他经典方法相比，该策略能显著降低能耗。
 
-**关键词：**Energy consumption, Internet of Things, Cloud computing, Servers, Data communication, Quality of service, Task analysis
+**关键词：** Energy consumption, Internet of Things, Cloud computing, Servers, Data communication, Quality of service, Task analysis
 
  
 
@@ -392,7 +392,7 @@
 
 为了实现人工智能(Al)的大规模和高效部署，Al和边缘计算的融合产生了边缘智能(Edge Intelligence)，它利用终端设备和边缘服务器的计算和通信能力，在离数据产生地点更近的地方处理数据。Edge Intelligence的一项支持技术是隐私保护机器学习范式，即联邦学习(federallearning, FL)，它使数据所有者无需将原始数据传输到第三方服务器就可以进行模型训练。然而，FL网络被设想包含数千个异构的分布式设备。因此，沟通效率低下仍然是一个关键的瓶颈。**为了减少节点故障和设备丢失**，提出了**层次化联合学习**(Hierarchical Federated Learning, HFL)框架，通过中间模型聚合指定簇头来支持数据所有者。这种分散学习方法减少了对中央控制器(如模型所有者)的依赖。然而，**在人力资源管理框架中，资源配置和激励设计问题却没有得到很好的研究**。本文考虑了一个**二级资源配置与激励机制设计问题**。在较低的层次上，集群负责人为数据所有者的参与提供奖励，数据所有者可以自由选择加入哪个集群。具体来说，我们应用**进化博弈论来模拟集群选择过程的动力学**。在上层，每个集群头可以选择服务于一个模型所有者，而模型所有者必须相互竞争集群头的服务。因此，我们提出了一种基于深度学习的拍卖机制来推导每个集群头服务的估值。通过性能评估，验证了进化博弈的唯一性和稳定性，以及基于深度学习的拍卖算法的收益最大化特性。
 
-**关键词：**Training, Computational modeling, Resource management, Magnetic heads, Data models, Games, Servers
+**关键词：** Training, Computational modeling, Resource management, Magnetic heads, Data models, Games, Servers
 
  
 
@@ -402,7 +402,7 @@
 
 **由于用户的预算限制或某些资源类型的限制，基于云的计算系统可能会超额订阅。超额订阅反过来会降低用户感知的服务质量(QoS)**。我们研究的减少超额订阅和产生的成本的方法是基于处理服务请求(即任务)所需计算的智能重用。我们为等待执行的任务提出了一个重用范例。在**多个用户可以同时请求类似服务的无服务器平台中，这种范式尤其具有影响力。**我们的动机是一个多媒体流媒体引擎，以按需方式处理媒体片段。我们提出了**一种机制来识别各种类型的“可合并”任务，并将它们聚合起来，以提高QoS和减少产生的成本**。我们开发了一种新的方法来确定何时以及如何执行任务聚合，以保证其他任务的QoS不受影响。评估结果表明，所提出的机制可以显著降低任务的逾期率，并将使用云服务的总时间(以及随后产生的成本)减少9%以上，从而提高QoS。
 
-**关键词：**Streaming media, Task analysis, Cloud computing, Containers, Engines, Delays, Admission control
+**关键词：** Streaming media, Task analysis, Cloud computing, Containers, Engines, Delays, Admission control
 
  
 
@@ -412,7 +412,7 @@
 
 Taskflow旨在使用基于任务图的轻量级方法简化并行和异构应用程序的构建。Taskflow引入了一种具有表达能力的任务图编程模型，以帮助开发人员在异构计算平台上实现并行和异构分解策略。**我们的编程模型将自己区分为一个非常通用的任务图并行类，它具有图内控制流，以实现端到端并行优化**。为了使我们的模型具有高性能，我们设计了一个高效的系统运行时，解决了我们模型中出现的许多新的调度挑战，**并在延迟、能源效率和吞吐量方面优化了性能**。我们已经在实际应用程序中演示了Taskflow的良好性能。例如，在一台拥有40个cpu和4个gpu的机器上，Taskflow解决的大规模机器学习工作负载比工业系统(oneTBB)快29%，内存少1.5倍，吞吐量高1.9倍。我们已经开放了Taskflow的源代码，并将其部署到开源社区的大量用户中。
 
-**关键词：**Task analysis, Parallel processing, Graphics processing units, Computational modeling, Programming, Solid modeling, Runtime
+**关键词：** Task analysis, Parallel processing, Graphics processing units, Computational modeling, Programming, Solid modeling, Runtime
 
 
 
@@ -422,7 +422,7 @@ Taskflow旨在使用基于任务图的轻量级方法简化并行和异构应用
 
 移动边缘计算(MEC)是一种利用边缘节点的可用资源来提高移动设备的计算和存储能力的解决方案。在MEC中，**任务的到达是高度动态的，很难精确预测**。在保证系统性能的前提下，将任务分配给边缘节点具有重要意义和挑战性。在本文中，我们的目标是通过**将任务最优地卸载给边缘节点来优化每个边缘节点所获得的收益**。提出了**收入驱动的在线任务卸载(ROTO)问题**，该问题被证明是NP-hard问题。首先，我们将ROTO分解为一个线性分式规划问题，提出了水平均衡分配(Level Balanced Allocation, LBA)算法。然后通过严格的理论分析证明了LBA的性能保证，并利用原对偶技术提出了ROTO的LBRounding算法。该算法以相当大的概率达到(d | 1)中2(1 + ξ)的近似比，其中d为边缘节点的最大进程槽数，f为一个小常数。通过跟踪驱动仿真和实验验证了该算法的性能。结果表明，与基线算法相比，该算法具有更高的效率。
 
-**关键词：**Task analysis, Cloud computing, Approximation algorithms, Wireless communication, Software, Resource management, Optimization
+**关键词：** Task analysis, Cloud computing, Approximation algorithms, Wireless communication, Software, Resource management, Optimization
 
 
 
